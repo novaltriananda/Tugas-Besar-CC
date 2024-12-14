@@ -62,12 +62,6 @@ buttonSignin.addEventListener('click', (e) => {
     return;
   }
 
-  signInWithEmailAndPassword(auth, emailSignin, passwordSignin)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      alert("Login berhasil! Selamat datang, " + user.email);
-      window.location.href = 'index.html';
-    })
     .catch((error) => {
       alert("Error: " + error.message);
     });
