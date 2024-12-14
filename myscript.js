@@ -65,7 +65,6 @@ buttonSignin.addEventListener('click', (e) => {
   signInWithEmailAndPassword(auth, emailSignin, passwordSignin)
     .then((userCredential) => {
       const user = userCredential.user;
-      //location.href="http://127.0.0.1:5500/index.html"
       window.location.href = 'index.html';
       alert("Login berhasil! Selamat datang, " + user.email);
     })
