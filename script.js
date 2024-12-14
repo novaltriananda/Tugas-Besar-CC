@@ -1,6 +1,8 @@
 // Redirect ke login.html jika belum login
 if (!sessionStorage.getItem('loggedIn')) {
     window.location.href = 'login.html';
+    console.log("Redirecting to index.html...");
+window.location.href = 'index.html';
 }
 // Toggle class active
 const navbarNav = document.querySelector(".navbar-nav");
