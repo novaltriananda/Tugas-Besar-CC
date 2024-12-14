@@ -1,3 +1,8 @@
+// Redirect ke login.html jika belum login
+if (!sessionStorage.getItem('loggedIn')) {
+    window.location.href = 'login.html';
+}
+
 // Toggle class active
 const navbarNav = document.querySelector(".navbar-nav");
 
