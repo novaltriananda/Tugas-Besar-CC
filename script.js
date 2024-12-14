@@ -2,11 +2,6 @@
 if (!sessionStorage.getItem('loggedIn')) {
     window.location.href = 'login.html';
 }
-  signInWithEmailAndPassword(auth, emailSignin, passwordSignin)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      alert("Login berhasil! Selamat datang, " + user.email);
-      window.location.href = 'index.html';
 // Toggle class active
 const navbarNav = document.querySelector(".navbar-nav");
 
