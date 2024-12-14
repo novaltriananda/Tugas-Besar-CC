@@ -2,6 +2,8 @@
 if (!sessionStorage.getItem('loggedIn')) {
     window.location.href = 'login.html';
 }
+console.log('Login berhasil, redirect ke index.html');
+console.log('Pengguna login:', user.email);
 
 // Toggle class active
 const navbarNav = document.querySelector(".navbar-nav");
